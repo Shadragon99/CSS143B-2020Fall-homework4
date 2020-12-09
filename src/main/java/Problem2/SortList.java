@@ -16,38 +16,9 @@ public class SortList {
         return mergeLists(sortList(head), sortList(mid));
     }
 
-    //helper method
-    public static int length(ListNode head){
-        int count = 0;
-        ListNode n = head;
-        while (n != null){
-            count++;
-            n = n.next;
-        }
-        return count;
-    }
-
     public static ListNode findMidAndBreak(ListNode head) {
         // homework
-        ListNode c ;
-        ListNode mid;
-
-        int length = length(head);
-        if (length < 2){
-            mid = null;
-            c = head;
-            return mid;
-        }
-        ListNode second = head;
-
-        int secondCount = (length - 1) / 2;
-        for (int i = 0; i < secondCount; i++){
-            second = second.next;
-        }
-        c = head;
-        mid = second.next;
-        second.next = null;
-        return mid;
+        return null;
     }
 
     public static ListNode mergeLists(ListNode list1, ListNode list2) {
